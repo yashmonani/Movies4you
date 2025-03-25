@@ -3,14 +3,14 @@ name: website deployment
 on:
   push:
     branches:
-     -main
+       -main
 
 jobs:
   build-jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v1 #all checkout work done by this , prewriten by github
+      uses: actions/checkout@v4 #all checkout work done by this , prewriten by github
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
